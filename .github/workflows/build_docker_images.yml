@@ -28,7 +28,7 @@ jobs:
         qgis_type: [ 'desktop', 'server' ]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: gautamkrishnar/keepalive-workflow@v2
 
@@ -79,7 +79,7 @@ jobs:
             release: bookworm
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - id: python_deps
         run: pip3 install packaging
